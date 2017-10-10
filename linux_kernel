@@ -1,6 +1,6 @@
 --ubuntu--
 Free more space in /boot
-========================
+------------------------
 $ sudo uname -r
 $ sudo dpkg -l 'linux-image*'
 $ sudo apt-get purge linux-image-"version of kernel"-generic
@@ -8,5 +8,5 @@ $ sudo apt-get purge linux-image-"version of kernel"-generic
 then delete manually the obselete files in /boot
 
 Upgrade to a supported configuration
-====================================
+------------------------------------
 $ sudo apt-get install linux-image-generic-lts-xenial
