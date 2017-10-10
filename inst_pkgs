@@ -1,0 +1,5 @@
+#!/bin/bash
+for x in `cat pkgs_needed`
+do
+apt-get install $x
+done
