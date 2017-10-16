@@ -1,0 +1,4 @@
+#!/bin/bash
+mv -v /usr/share/dbus-1/system-services/org.freedesktop.ModemManager.service /usr/share/dbus-1/system-services/org.freedesktop.ModemManager.service.disabled
+echo manual | sudo tee -a /etc/init/modemmanager.override
+update-rc.d bluetooth remove

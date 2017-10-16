@@ -1,0 +1,9 @@
+encrypt file: 
+tar cz encrypted/ | openssl enc -aes-256-cbc -e > encrypted.tar.gz.enc
+
+decrypt file:
+openssl aes-256-cbc -d -in encrypted.tar.gz.enc | tar xz
+
+
+see context of certificat:
+openssl x509 -in acs.qacafe.crt -text
